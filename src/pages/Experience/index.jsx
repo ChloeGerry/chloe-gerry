@@ -54,7 +54,7 @@ const Experience = () => {
           />
           <List
             logo="/assets/css3-logo.svg"
-            description="Logo de CSS 3"
+            description="Logo de CSS3"
             text="CSS 3"
           />
           <List

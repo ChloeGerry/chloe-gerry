@@ -9,6 +9,7 @@ export const ListWrapper = styled.li`
 export const Image = styled.img`
   width: 60px;
   height: 60px;
+  padding-left: ${({ $padding }) => $padding};
 `;
 
 export const Text = styled.span`
