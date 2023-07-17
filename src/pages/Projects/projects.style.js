@@ -1,6 +1,10 @@
 import { styled } from 'styled-components';
 
-export const ProjectMainTitle = styled.h2`
+export const ProjectsSection = styled.section`
+  margin-bottom: 72px;
+`;
+
+export const ProjectsMainTitle = styled.h2`
   text-align: center;
 `;
 
@@ -15,12 +19,15 @@ export const CardsContainer = styled.div`
 export const CardWrapper = styled.article`
   display: flex;
   flex-direction: column;
+  padding: 16px;
   border: 1px solid black;
   border-radius: 15px;
-  justify-content: center;
+  width: 40%;
   align-items: center;
+  justify-content: space-between;
 `;
 
-export const ListContainer = styled.div`
+export const ListContainer = styled.ul`
   display: flex;
+  padding: 0;
 `;

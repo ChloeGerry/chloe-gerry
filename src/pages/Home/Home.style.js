@@ -1,5 +1,15 @@
 import { styled } from 'styled-components';
 
+export const ProfilePicture = styled.img`
+  width: 115px;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 10px;
+  position: absolute;
+  left: 2%;
+  bottom: 4%;
+`;
+
 export const Presentation = styled.div`
   position: absolute;
   top: 50%;

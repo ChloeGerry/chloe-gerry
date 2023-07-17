@@ -2,6 +2,7 @@ import { styled } from 'styled-components';
 
 export const ExperienceWrapper = styled.section`
   text-align: center;
+  margin-bottom: 72px;
 `;
 
 export const Article = styled.article`

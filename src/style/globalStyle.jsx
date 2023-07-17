@@ -6,7 +6,6 @@ const StyledGlobalStyle = createGlobalStyle`
     }
 
     body {
-      /* font-family: 'Playfair Display', serif; */
       font-family: 'Inconsolata', monospace;
         margin: 0 auto;
     }

@@ -1,8 +1,15 @@
-import { Presentation, MainTitle, HomeWrapper, HomeImage } from './Home.style';
+import {
+  ProfilePicture,
+  Presentation,
+  MainTitle,
+  HomeWrapper,
+  HomeImage,
+} from './Home.style';
 
 const Home = () => {
   return (
     <section id="home">
+      <ProfilePicture src="/assets/portrait.jpeg" alt="Photo de Chloé Gerry" />
       <Presentation>
         <MainTitle>Chloé Gerry</MainTitle>
         <h2>Développeuse Front-end</h2>
