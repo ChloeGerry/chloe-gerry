@@ -30,7 +30,7 @@ export const ProfilePicture = styled.img`
   border-radius: 10px;
   position: absolute;
   left: 2%;
-  bottom: 4%;
+  bottom: 3%;
   cursor: pointer;
   border: 2px solid white;
 `;

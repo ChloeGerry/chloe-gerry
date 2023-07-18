@@ -7,6 +7,7 @@ const Header = () => {
         <Anchor href="#home">Accueil</Anchor>
         <Anchor href="#experience">Mon expérience</Anchor>
         <Anchor href="#projects">Mes projets</Anchor>
+        <Anchor href="#contact">Me contacter</Anchor>
       </Navigation>
     </HeaderStyled>
   );
