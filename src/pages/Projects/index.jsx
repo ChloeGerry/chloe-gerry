@@ -11,7 +11,7 @@ import {
 const Projects = () => {
   return (
     <ProjectsSection id="projects">
-      <ProjectsMainTitle>Mes projets</ProjectsMainTitle>
+      <ProjectsMainTitle>Projets</ProjectsMainTitle>
       <CardsContainer>
         <CardWrapper>
           <ListContainer>

@@ -1,13 +1,38 @@
 import { styled } from 'styled-components';
 
+export const ModalWrapper = styled.dialog`
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 10px;
+  padding-bottom: 48px;
+`;
+
+export const CloseIconWrapper = styled.div`
+  display: flex;
+  justify-content: flex-end;
+`;
+
+export const CloseIcon = styled.i`
+  cursor: pointer;
+`;
+
+export const ModalTitle = styled.h2`
+  margin: 24px 8px 24px 8px;
+`;
+
 export const ProfilePicture = styled.img`
-  width: 115px;
+  width: 113px;
   height: 150px;
   object-fit: contain;
   border-radius: 10px;
   position: absolute;
   left: 2%;
   bottom: 4%;
+  cursor: pointer;
+  border: 2px solid white;
 `;
 
 export const Presentation = styled.div`

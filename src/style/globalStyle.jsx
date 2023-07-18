@@ -22,6 +22,10 @@ const StyledGlobalStyle = createGlobalStyle`
     h3 {
       font-size: 2.1rem;
     }
+
+    p {
+      font-size: 1.2rem;
+    }
 `;
 
 const GlobalStyle = () => {
