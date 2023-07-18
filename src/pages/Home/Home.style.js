@@ -1,5 +1,9 @@
 import { styled } from 'styled-components';
 
+export const HomeSection = styled.section`
+  filter: ${({ $blur }) => $blur};
+`;
+
 export const ModalWrapper = styled.dialog`
   z-index: 1;
   top: 50%;

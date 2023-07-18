@@ -6,6 +6,7 @@ import {
   CardsContainer,
   CardWrapper,
   ListContainer,
+  IconesCredits,
 } from './projects.style';
 
 const Projects = () => {
@@ -16,13 +17,13 @@ const Projects = () => {
         <CardWrapper>
           <ListContainer>
             <List
-              logo="/assets/react-logo.svg"
-              description="Logo de React"
+              logo="/assets/typescript-logo.svg"
+              description="Logo de Typescript"
               $padding="8px"
             />
             <List
-              logo="/assets/typescript-logo.svg"
-              description="Logo de Typescript"
+              logo="/assets/react-logo.svg"
+              description="Logo de React"
               $padding="8px"
             />
             <List
@@ -63,13 +64,13 @@ const Projects = () => {
         <CardWrapper>
           <ListContainer>
             <List
-              logo="/assets/react-logo.svg"
-              description="Logo de React"
+              logo="/assets/redux-logo.svg"
+              description="Logo de Redux"
               $padding="8px"
             />
             <List
-              logo="/assets/redux-logo.svg"
-              description="Logo de Redux"
+              logo="/assets/react-logo.svg"
+              description="Logo de React"
               $padding="8px"
             />
             <List
@@ -89,9 +90,55 @@ const Projects = () => {
         <CardWrapper>
           <ListContainer>
             <List
+              logo="/assets/jest-logo.svg"
+              description="Logo de Jest"
+              $padding="8px"
+            />
+            <List
+              logo="/assets/react-logo.svg"
+              description="Logo de React"
+              $padding="8px"
+            />
+          </ListContainer>
+          <CardPreview
+            screen="/assets/debug.jpg"
+            title="Débug d'un site d'événementiel"
+            text="Débug d'un site existant. Utilisation de librairies comme Jest et React Testing Library pour réaliser des tests unitaires et d'intégration. Ce projet m'a fait découvrir et pratiquer l'utilisation de tests dans un projet."
+            github="https://github.com/ChloeGerry/Debugguer-P10.git"
+            site=""
+          />
+        </CardWrapper>
+        <CardWrapper>
+          <ListContainer>
+            <List
               logo="/assets/javascript-logo.svg"
               description="Logo de JavaScript"
               $padding="8px"
+            />
+            <List
+              logo="/assets/html-5-logo.svg"
+              description="Logo de HTML5"
+              $padding="8px"
+            />
+            <List
+              logo="/assets/css3-logo.svg"
+              description="Logo de CSS3"
+              $padding="8px"
+            />
+          </ListContainer>
+          <CardPreview
+            screen="/assets/portfolio.jpg"
+            title="Portfolio d'une photographe"
+            text="Création du portfolio d'une photographe. Utilisation de JavaScript pour récupérer dynamiquement les données, ainsi que pour ajouter ou supprimer des travaux. Ce projet m'a fait travailler l'utilisation du CRUD et des call api."
+            github="https://github.com/ChloeGerry/Portfolio-P6.git"
+            site=""
+          />
+        </CardWrapper>
+        <CardWrapper>
+          <ListContainer>
+            <List
+              logo="/assets/javascript-logo.svg"
+              description="Logo de JavaScript"
             />
           </ListContainer>
           <CardPreview
@@ -103,6 +150,10 @@ const Projects = () => {
           />
         </CardWrapper>
       </CardsContainer>
+      <IconesCredits>
+        * Certaines icônes proviennent du site{' '}
+        <a href="https://icones8.fr/">Icones8</a>
+      </IconesCredits>
     </ProjectsSection>
   );
 };
