@@ -5,9 +5,8 @@ import {
   CloseIcon,
   ModalTitle,
   ProfilePicture,
-  Presentation,
   MainTitle,
-  HomeWrapper,
+  Subtitle,
   HomeImage,
 } from './Home.style';
 import { useState } from 'react';
@@ -43,41 +42,41 @@ const Home = () => {
             </p>
             <a href="#">Mon CV</a>
           </ModalWrapper>
-          <HomeSection id="home" $blur="blur(20px)">
+          <HomeSection id="home">
+            <HomeImage
+              src="assets/home.jpg"
+              $transform="translateZ(-10px) scale(2)"
+            />
+            <HomeImage
+              src="/assets/bubbles.png"
+              $transform="translateZ(-5px) scale(1.5);"
+            />
+            <MainTitle>Chloé Gerry</MainTitle>
+            <Subtitle>Développeuse Front-end</Subtitle>
             <ProfilePicture
               onClick={handleModal}
               src="/assets/portrait.jpeg"
               alt="Photo de Chloé Gerry"
             />
-            <Presentation>
-              <MainTitle>Chloé Gerry</MainTitle>
-              <h2>Développeuse Front-end</h2>
-            </Presentation>
-            <HomeWrapper>
-              <HomeImage
-                src="/assets/home-background.jpg"
-                alt="Image artistique de couleurs pastels"
-              />
-            </HomeWrapper>
           </HomeSection>
         </>
       ) : (
         <HomeSection id="home">
+          <HomeImage
+            src="assets/home.jpg"
+            $transform="translateZ(-10px) scale(2)"
+          />
+          <HomeImage
+            src="/assets/bubbles.png"
+            $transform="translateZ(-5px) scale(1.5);"
+          />
+          <MainTitle>Chloé Gerry</MainTitle>
+          <Subtitle>Développeuse Front-end</Subtitle>
           <ProfilePicture
             onClick={handleModal}
             src="/assets/portrait.jpeg"
             alt="Photo de Chloé Gerry"
           />
-          <Presentation>
-            <MainTitle>Chloé Gerry</MainTitle>
-            <h2>Développeuse Front-end</h2>
-          </Presentation>
-          <HomeWrapper>
-            <HomeImage
-              src="/assets/home-background.jpg"
-              alt="Image artistique de couleurs pastels"
-            />
-          </HomeWrapper>
         </HomeSection>
       )}
     </>

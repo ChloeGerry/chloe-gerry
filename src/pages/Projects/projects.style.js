@@ -16,17 +16,6 @@ export const CardsContainer = styled.div`
   gap: 24px;
 `;
 
-const slideCard = keyframes`
-  0% {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0%);
-  }
-`;
-
 export const CardWrapper = styled.article`
   display: flex;
   flex-direction: column;
@@ -37,7 +26,6 @@ export const CardWrapper = styled.article`
   align-items: center;
   justify-content: space-between;
   box-shadow: 5px 5px 15px 0px #a6bcdd;
-  animation: ${slideCard} 500ms;
 `;
 
 export const ListContainer = styled.ul`

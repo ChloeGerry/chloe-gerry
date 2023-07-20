@@ -1,20 +1,20 @@
-import { createPath } from 'react-router-dom';
 import { styled } from 'styled-components';
 
-export const HeaderStyled = styled.header`
-  display: flex;
-  justify-content: flex-end;
-  font-size: 1.2rem;
-`;
-
 export const Navigation = styled.nav`
+  display: flex;
+  gap: 24px;
+  padding: 8px;
+  background-color: black;
+  border-radius: 5px;
   position: fixed;
   top: 24px;
   right: 32px;
+  z-index: 1;
+  font-size: 1.2rem;
 `;
 
 export const Anchor = styled.a`
-  padding-left: 24px;
+  color: white;
 
   &:hover {
     text-decoration: underline;
