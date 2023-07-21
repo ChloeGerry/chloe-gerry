@@ -8,10 +8,15 @@ import {
   ListContainer,
   IconesCredits,
 } from './projects.style';
+import { useContext } from 'react';
+import { ThemeContext } from '../../context/themeContext';
 
 const Projects = () => {
+  const { isDarkTheme, light, dark } = useContext(ThemeContext);
+  const theme = isDarkTheme ? dark : light;
+
   return (
-    <ProjectsSection id="projects">
+    <ProjectsSection id="projects" theme={theme}>
       <ProjectsMainTitle>Projets</ProjectsMainTitle>
       <CardsContainer>
         <CardWrapper>

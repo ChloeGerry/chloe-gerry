@@ -7,16 +7,19 @@ import {
   ProfilePicture,
   MainTitle,
   Subtitle,
-  HomeImage,
+  HomeImageForeground,
+  HomeImageBackground,
 } from './Home.style';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import { ThemeContext } from '../../context/themeContext';
 
 const Home = () => {
+  const { isDarkTheme, light, dark } = useContext(ThemeContext);
+  const theme = isDarkTheme ? dark : light;
   const [isModalOpen, setModalOpen] = useState(false);
 
   const handleModal = (event) => {
     event.preventDefault();
-    console.log('isModalOpen', isModalOpen);
     setModalOpen(true);
   };
 
@@ -24,7 +27,7 @@ const Home = () => {
     <>
       {isModalOpen ? (
         <>
-          <ModalWrapper open>
+          <ModalWrapper open theme={theme}>
             <CloseIconWrapper>
               <CloseIcon
                 className="fa-solid fa-xmark"
@@ -43,39 +46,43 @@ const Home = () => {
             <a href="#">Mon CV</a>
           </ModalWrapper>
           <HomeSection id="home">
-            <HomeImage
+            <HomeImageBackground
               src="assets/home.jpg"
               $transform="translateZ(-10px) scale(2)"
+              theme={theme}
             />
-            <HomeImage
+            <HomeImageForeground
               src="/assets/bubbles.png"
               $transform="translateZ(-5px) scale(1.5);"
+              theme={theme}
             />
-            <MainTitle>Chloé Gerry</MainTitle>
-            <Subtitle>Développeuse Front-end</Subtitle>
             <ProfilePicture
               onClick={handleModal}
               src="/assets/portrait.jpeg"
               alt="Photo de Chloé Gerry"
+              theme={theme}
             />
           </HomeSection>
         </>
       ) : (
         <HomeSection id="home">
-          <HomeImage
+          <HomeImageBackground
             src="assets/home.jpg"
             $transform="translateZ(-10px) scale(2)"
+            theme={theme}
           />
-          <HomeImage
+          <HomeImageForeground
             src="/assets/bubbles.png"
             $transform="translateZ(-5px) scale(1.5);"
+            theme={theme}
           />
-          <MainTitle>Chloé Gerry</MainTitle>
-          <Subtitle>Développeuse Front-end</Subtitle>
+          <MainTitle theme={theme}>Chloé Gerry</MainTitle>
+          <Subtitle theme={theme}>Développeuse Front-end</Subtitle>
           <ProfilePicture
             onClick={handleModal}
             src="/assets/portrait.jpeg"
             alt="Photo de Chloé Gerry"
+            theme={theme}
           />
         </HomeSection>
       )}

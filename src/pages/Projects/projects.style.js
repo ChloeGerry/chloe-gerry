@@ -1,7 +1,9 @@
-import { styled, keyframes } from 'styled-components';
+import { styled } from 'styled-components';
 
 export const ProjectsSection = styled.section`
   margin-bottom: 72px;
+  color: ${({ theme }) => theme.text};
+  background-color: ${({ theme }) => theme.background};
 `;
 
 export const ProjectsMainTitle = styled.h2`

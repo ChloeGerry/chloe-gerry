@@ -1,9 +1,14 @@
 import List from '../../components/List';
 import { ExperienceWrapper, Article, ListWrapper } from './experience.style';
+import { useContext } from 'react';
+import { ThemeContext } from '../../context/themeContext';
 
 const Experience = () => {
+  const { isDarkTheme, light, dark } = useContext(ThemeContext);
+  const theme = isDarkTheme ? dark : light;
+
   return (
-    <ExperienceWrapper id="experience">
+    <ExperienceWrapper id="experience" theme={theme}>
       <h2>Expérience</h2>
       <h3>Formations</h3>
       <p>
@@ -72,11 +77,20 @@ const Experience = () => {
             description="Logo de Git"
             text="Git"
           />
-          <List
-            logo="/assets/github-logo.svg"
-            description="Logo de GitHub"
-            text="GitHub"
-          />
+          {isDarkTheme ? (
+            <List
+              logo="/assets/github-logo.svg"
+              description="Logo de GitHub"
+              text="GitHub"
+              $filter="invert(1)"
+            />
+          ) : (
+            <List
+              logo="/assets/github-logo.svg"
+              description="Logo de GitHub"
+              text="GitHub"
+            />
+          )}
           <List
             logo="/assets/npm-logo.svg"
             description="Logo de NPM"

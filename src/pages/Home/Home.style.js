@@ -11,36 +11,45 @@ export const HomeSection = styled.section`
   z-index: -1;
 `;
 
-export const HomeImage = styled.img`
+export const HomeImageForeground = styled.img`
   position: absolute;
   height: 100%;
   width: 100%;
   object-fit: cover;
   z-index: -1;
   transform: ${({ $transform }) => $transform};
+  filter: ${({ theme }) => theme.filterForeground};
+`;
+
+export const HomeImageBackground = styled.img`
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  transform: ${({ $transform }) => $transform};
+  filter: ${({ theme }) => theme.filterBackground};
 `;
 
 export const MainTitle = styled.h1`
   font-size: 3rem;
-  color: white;
-  text-shadow: 0 0 5px black;
+  color: ${({ theme }) => theme.text};
 `;
 
 export const Subtitle = styled.h2`
-  color: white;
-  text-shadow: 0 0 5px black;
+  color: ${({ theme }) => theme.text};
 `;
 
 export const ProfilePicture = styled.img`
-  width: 113px;
-  height: 150px;
+  width: 112px;
+  height: 149px;
   object-fit: contain;
   border-radius: 10px;
   position: absolute;
   left: 2%;
   bottom: 3%;
   cursor: pointer;
-  border: 2px solid white;
+  border: ${({ theme }) => theme.border};
 `;
 
 export const ModalWrapper = styled.dialog`
@@ -51,6 +60,8 @@ export const ModalWrapper = styled.dialog`
   text-align: center;
   border-radius: 10px;
   padding-bottom: 48px;
+  color: ${({ theme }) => theme.text};
+  background-color: ${({ theme }) => theme.background};
 `;
 
 export const CloseIconWrapper = styled.div`

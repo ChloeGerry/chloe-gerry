@@ -4,7 +4,7 @@ export const Navigation = styled.nav`
   display: flex;
   gap: 24px;
   padding: 8px;
-  background-color: black;
+  background-color: ${({ theme }) => theme.background};
   border-radius: 5px;
   position: fixed;
   top: 24px;
@@ -14,7 +14,7 @@ export const Navigation = styled.nav`
 `;
 
 export const Anchor = styled.a`
-  color: white;
+  color: ${({ theme }) => theme.text};
 
   &:hover {
     text-decoration: underline;

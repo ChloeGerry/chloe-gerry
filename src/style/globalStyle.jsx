@@ -1,4 +1,6 @@
-import { createGlobalStyle, css } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
+import { useContext } from 'react';
+import { ThemeContext } from '../context/themeContext';
 
 const StyledGlobalStyle = createGlobalStyle`
   #root {
@@ -8,11 +10,12 @@ const StyledGlobalStyle = createGlobalStyle`
   body {
     font-family: 'Inconsolata', monospace;
     margin: 0;
+    background-color: ${({ theme }) => theme.background};
   }
 
   a {
     text-decoration: none;
-    color: black;
+    color: ${({ theme }) => theme.text};
   }
 
   h2 {
@@ -29,7 +32,10 @@ const StyledGlobalStyle = createGlobalStyle`
 `;
 
 const GlobalStyle = () => {
-  return <StyledGlobalStyle />;
+  const { isDarkTheme, light, dark } = useContext(ThemeContext);
+  const theme = isDarkTheme ? dark : light;
+
+  return <StyledGlobalStyle theme={theme} />;
 };
 
 export default GlobalStyle;

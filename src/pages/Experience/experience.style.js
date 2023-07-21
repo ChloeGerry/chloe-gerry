@@ -4,8 +4,8 @@ export const ExperienceWrapper = styled.section`
   text-align: center;
   margin-bottom: 72px;
   padding: 2rem;
-  color: black;
-  background-color: white;
+  color: ${({ theme }) => theme.text};
+  background-color: ${({ theme }) => theme.background};
 `;
 
 export const Article = styled.article`
