@@ -25,9 +25,19 @@ export const CardWrapper = styled.article`
   border: 1px solid #a6bcdd;
   border-radius: 15px;
   width: 40%;
+  height: auto;
   align-items: center;
   justify-content: space-between;
   box-shadow: 3px 3px 10px 0px #a6bcdd;
+
+  @media (max-width: 1300px) {
+    height: 1000px;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 800px;
+  }
 `;
 
 export const ListContainer = styled.ul`

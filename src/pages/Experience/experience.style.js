@@ -19,4 +19,6 @@ export const ListWrapper = styled.ul`
   list-style: none;
   padding: 0;
   gap: 48px;
+  flex-wrap: wrap;
+  justify-content: center;
 `;

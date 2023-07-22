@@ -11,6 +11,22 @@ export const Navigation = styled.nav`
   right: 32px;
   z-index: 1;
   font-size: 1.2rem;
+
+  @media (max-width: 768px) {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    top: 90px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @media (max-width: 400px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    top: 95px;
+  }
 `;
 
 export const Anchor = styled.a`

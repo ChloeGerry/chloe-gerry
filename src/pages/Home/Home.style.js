@@ -34,10 +34,18 @@ export const HomeImageBackground = styled.img`
 export const MainTitle = styled.h1`
   font-size: 3rem;
   color: ${({ theme }) => theme.text};
+  @media (max-width: 768px) {
+    margin: 0;
+    padding-top: 16px;
+  }
 `;
 
 export const Subtitle = styled.h2`
   color: ${({ theme }) => theme.text};
+
+  @media (max-width: 400px) {
+    text-align: center;
+  }
 `;
 
 export const ProfilePicture = styled.img`
@@ -50,6 +58,11 @@ export const ProfilePicture = styled.img`
   bottom: 3%;
   cursor: pointer;
   border: ${({ theme }) => theme.border};
+
+  @media (max-width: 688px) {
+    width: 90px;
+    height: 120px;
+  }
 `;
 
 export const ModalWrapper = styled.dialog`
@@ -62,6 +75,9 @@ export const ModalWrapper = styled.dialog`
   padding-bottom: 48px;
   color: ${({ theme }) => theme.text};
   background-color: ${({ theme }) => theme.background};
+  @media (max-width: 320px) {
+    bottom: -250px;
+  }
 `;
 
 export const CloseIconWrapper = styled.div`
