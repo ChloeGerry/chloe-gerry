@@ -9,12 +9,16 @@ import {
 import { useContext } from 'react';
 import { ThemeContext } from '../../context/themeContext';
 
-const CardPreview = ({ screen, title, text, github, site }) => {
+const CardPreview = ({ screen, title, text, github, site, $height }) => {
   const { isDarkTheme } = useContext(ThemeContext);
 
   return (
     <>
-      <CardPreviewImage src={screen} alt="Capture d'écran de projets de code" />
+      <CardPreviewImage
+        src={screen}
+        alt="Capture d'écran de projets de code"
+        $height={$height}
+      />
       <CardPreviewTitle>{title}</CardPreviewTitle>
       <CardPreviewText>{text}</CardPreviewText>
       <LinkWrapper>

@@ -7,7 +7,7 @@ const Button = ({ children, onClick }) => {
   const theme = isDarkTheme ? dark : light;
 
   return (
-    <ButtonStyled theme={theme} onClick={onClick}>
+    <ButtonStyled type="button" theme={theme} onClick={onClick}>
       {children}
     </ButtonStyled>
   );

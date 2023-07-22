@@ -1,9 +1,9 @@
 import { styled } from 'styled-components';
 
 export const CardPreviewImage = styled.img`
-  width: 500px;
-  height: 300px;
+  width: 90%;
   object-fit: contain;
+  height: ${({ $height }) => $height};
 `;
 
 export const CardPreviewTitle = styled.h3`
@@ -12,6 +12,7 @@ export const CardPreviewTitle = styled.h3`
 
 export const CardPreviewText = styled.p`
   text-align: center;
+  height: 25%;
 `;
 
 export const LinkWrapper = styled.div`

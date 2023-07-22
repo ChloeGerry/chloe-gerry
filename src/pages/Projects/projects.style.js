@@ -27,7 +27,7 @@ export const CardWrapper = styled.article`
   width: 40%;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 5px 5px 15px 0px #a6bcdd;
+  box-shadow: 3px 3px 10px 0px #a6bcdd;
 `;
 
 export const ListContainer = styled.ul`

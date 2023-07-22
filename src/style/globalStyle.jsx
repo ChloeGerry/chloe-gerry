@@ -8,7 +8,7 @@ const StyledGlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Inconsolata', 'helvetica', monospace;
     margin: 0;
     background-color: ${({ theme }) => theme.background};
   }

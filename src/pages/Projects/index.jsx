@@ -61,7 +61,7 @@ const Projects = () => {
           <CardPreview
             screen="/assets/kasa.jpg"
             title="Application de location immobilière"
-            text="Refonte totale d'une application immobilière entièrement en React et responsive. Utilisation de react router afin de naviguer entre les différentes pages de l'application. C'est projet m'a permis de découvrir React, le travail par composants et la création de routes."
+            text="Refonte totale d'une application immobilière entièrement en React et responsive. Utilisation de react router afin de naviguer entre les différentes pages de l'application. Ce projet m'a permis de découvrir React, le travail par composants et la création de routes."
             github="https://github.com/ChloeGerry/Kasa-P8.git"
             site=""
           />
@@ -152,6 +152,7 @@ const Projects = () => {
             text="Algorithme qui défini au hasard la distribution de cadeau au clic sur un bouton. C'est le premier projet JavaScript sur lequel j'ai travaillé, il m'a permis de travailler mon algorithmie."
             github="https://github.com/ChloeGerry/Algorithme-de-Noel.git"
             site=""
+            $height="68%"
           />
         </CardWrapper>
       </CardsContainer>

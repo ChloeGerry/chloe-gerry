@@ -38,10 +38,7 @@ const Home = () => {
             <p>
               Après avoir travaillé 7 ans dans le social, j'aspirais à changer
               de vie. Je me suis donc lancée dans la grande aventure du
-              développement web et plus particulièrement front-end, pour son
-              accessibilité. À terme, j'ambitionne de non seulement développer
-              mes compétences front-end mais aussi back-end et de m'orienter
-              vers la cyber-sécurité.
+              développement web et plus particulièrement du front-end.
             </p>
             <a href="#">Mon CV</a>
           </ModalWrapper>
