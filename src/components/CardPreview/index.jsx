@@ -28,13 +28,13 @@ const CardPreview = ({ screen, title, text, github, site, $height }) => {
         <a href={github}>
           {isDarkTheme ? (
             <GitHubLogo
-              src="/assets/github-logo.svg"
+              src="assets/github-logo.svg"
               alt="Lien du Repository GitHub"
               $filter="invert(1)"
             />
           ) : (
             <GitHubLogo
-              src="/assets/github-logo.svg"
+              src="assets/github-logo.svg"
               alt="Lien du Repository GitHub"
             />
           )}
