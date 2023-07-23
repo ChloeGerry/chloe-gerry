@@ -23,47 +23,47 @@ const Experience = () => {
         <h3>Compétences</h3>
         <ListWrapper>
           <List
-            logo="/assets/javascript-logo.svg"
+            logo="assets/javascript-logo.svg"
             description="Logo de JavaScript"
             text="JavaScript"
           />
           <List
-            logo="/assets/typescript-logo.svg"
+            logo="assets/typescript-logo.svg"
             description="Logo de Typescript"
             text="TypeScript"
           />
           <List
-            logo="/assets/react-logo.svg"
+            logo="assets/react-logo.svg"
             description="Logo de React"
             text="React"
           />
           <List
-            logo="/assets/redux-logo.svg"
+            logo="assets/redux-logo.svg"
             description="Logo de Redux"
             text="Redux"
           />
           <List
-            logo="/assets/jest-logo.svg"
+            logo="assets/jest-logo.svg"
             description="Logo de Jest"
             text="Jest"
           />
           <List
-            logo="/assets/styled-components-logo.svg"
+            logo="assets/styled-components-logo.svg"
             description="Logo de Styled-components"
             text="Styled-components"
           />
           <List
-            logo="/assets/html-5-logo.svg"
+            logo="assets/html-5-logo.svg"
             description="Logo de HTML5"
             text="HTML 5"
           />
           <List
-            logo="/assets/css3-logo.svg"
+            logo="assets/css3-logo.svg"
             description="Logo de CSS3"
             text="CSS 3"
           />
           <List
-            logo="/assets/sass-logo.svg"
+            logo="assets/sass-logo.svg"
             description="Logo de SASS"
             text="SASS"
           />
@@ -73,31 +73,31 @@ const Experience = () => {
         <h3>Outils</h3>
         <ListWrapper>
           <List
-            logo="/assets/git-logo.svg"
+            logo="assets/git-logo.svg"
             description="Logo de Git"
             text="Git"
           />
           {isDarkTheme ? (
             <List
-              logo="/assets/github-logo.svg"
+              logo="assets/github-logo.svg"
               description="Logo de GitHub"
               text="GitHub"
               $filter="invert(1)"
             />
           ) : (
             <List
-              logo="/assets/github-logo.svg"
+              logo="assets/github-logo.svg"
               description="Logo de GitHub"
               text="GitHub"
             />
           )}
           <List
-            logo="/assets/npm-logo.svg"
+            logo="assets/npm-logo.svg"
             description="Logo de NPM"
             text="NPM"
           />
           <List
-            logo="/assets/swagger-logo.svg"
+            logo="assets/swagger-logo.svg"
             description="Logo de Swagger"
             text="Swagger (REST API)"
           />

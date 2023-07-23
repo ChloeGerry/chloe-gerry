@@ -40,7 +40,7 @@ const Home = () => {
               de vie. Je me suis donc lancée dans la grande aventure du
               développement web et plus particulièrement du front-end.
             </p>
-            <a href="#">Mon CV</a>
+            <a href="resume.pdf">Mon CV</a>
           </ModalWrapper>
           <HomeSection id="home">
             <HomeImageBackground
@@ -49,13 +49,13 @@ const Home = () => {
               theme={theme}
             />
             <HomeImageForeground
-              src="/assets/bubbles.png"
+              src="assets/bubbles.png"
               $transform="translateZ(-5px) scale(1.5);"
               theme={theme}
             />
             <ProfilePicture
               onClick={handleModal}
-              src="/assets/portrait.jpeg"
+              src="assets/portrait.jpeg"
               alt="Photo de Chloé Gerry"
               theme={theme}
             />
@@ -69,7 +69,7 @@ const Home = () => {
             theme={theme}
           />
           <HomeImageForeground
-            src="/assets/bubbles.png"
+            src="assets/bubbles.png"
             $transform="translateZ(-5px) scale(1.5);"
             theme={theme}
           />
@@ -77,7 +77,7 @@ const Home = () => {
           <Subtitle theme={theme}>Développeuse Front-end</Subtitle>
           <ProfilePicture
             onClick={handleModal}
-            src="/assets/portrait.jpeg"
+            src="assets/portrait.jpeg"
             alt="Photo de Chloé Gerry"
             theme={theme}
           />
