@@ -43,6 +43,9 @@ export const CardWrapper = styled.article`
 export const ListContainer = styled.ul`
   display: flex;
   padding: 0;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
 `;
 
 export const IconesCredits = styled.p`

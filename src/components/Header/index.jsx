@@ -1,4 +1,4 @@
-import { Navigation, Anchor } from './header.style';
+import { HeaderStyled, Navigation, Anchor } from './header.style';
 import ThemeToggle from '../Theme';
 import { useContext } from 'react';
 import { ThemeContext } from '../../context/themeContext';
@@ -7,12 +7,9 @@ const Header = () => {
   const { isDarkTheme, light, dark } = useContext(ThemeContext);
   const theme = isDarkTheme ? dark : light;
   return (
-    <header>
+    <HeaderStyled>
       <ThemeToggle />
       <Navigation theme={theme}>
-        <Anchor theme={theme} href="#home">
-          Accueil
-        </Anchor>
         <Anchor theme={theme} href="#experience">
           Mon expérience
         </Anchor>
@@ -23,7 +20,7 @@ const Header = () => {
           Me contacter
         </Anchor>
       </Navigation>
-    </header>
+    </HeaderStyled>
   );
 };
 

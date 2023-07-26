@@ -36,12 +36,15 @@ export const MainTitle = styled.h1`
   color: ${({ theme }) => theme.text};
   @media (max-width: 768px) {
     margin: 0;
-    padding-top: 16px;
   }
 `;
 
 export const Subtitle = styled.h2`
   color: ${({ theme }) => theme.text};
+
+  @media (max-width: 688px) {
+    margin: 0;
+  }
 
   @media (max-width: 400px) {
     text-align: center;
@@ -55,7 +58,7 @@ export const ProfilePicture = styled.img`
   border-radius: 10px;
   position: absolute;
   left: 2%;
-  bottom: 3%;
+  bottom: 4%;
   cursor: pointer;
   border: ${({ theme }) => theme.border};
 

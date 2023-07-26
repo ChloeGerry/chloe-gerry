@@ -1,5 +1,11 @@
 import { styled } from 'styled-components';
 
+export const HeaderStyled = styled.header`
+  display: flex;
+  align-items: center;
+  position: absolute;
+`;
+
 export const Navigation = styled.nav`
   display: flex;
   gap: 24px;
@@ -13,9 +19,11 @@ export const Navigation = styled.nav`
   font-size: 1.2rem;
 
   @media (max-width: 768px) {
-    width: fit-content;
+    /* width: fit-content; */
+    width: 90%;
     display: flex;
     align-items: center;
+    justify-content: center;
     text-align: center;
     top: 90px;
     left: 50%;
@@ -24,8 +32,7 @@ export const Navigation = styled.nav`
   @media (max-width: 400px) {
     flex-wrap: wrap;
     justify-content: center;
-    width: 90%;
-    top: 95px;
+    top: 100px;
   }
 `;
 

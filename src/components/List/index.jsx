@@ -1,14 +1,9 @@
 import { ListWrapper, Image, Text } from './list.style';
 
-const List = ({ logo, text, description, $padding, $filter }) => {
+const List = ({ logo, text, description, $filter }) => {
   return (
     <ListWrapper>
-      <Image
-        $filter={$filter}
-        src={logo}
-        $padding={$padding}
-        alt={description}
-      />
+      <Image $filter={$filter} src={logo} alt={description} />
       <Text>{text}</Text>
     </ListWrapper>
   );

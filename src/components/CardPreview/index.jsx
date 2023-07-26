@@ -9,7 +9,15 @@ import {
 import { useContext } from 'react';
 import { ThemeContext } from '../../context/themeContext';
 
-const CardPreview = ({ screen, title, text, github, site, $height }) => {
+const CardPreview = ({
+  screen,
+  title,
+  text,
+  textTitle,
+  github,
+  site,
+  $height,
+}) => {
   const { isDarkTheme } = useContext(ThemeContext);
 
   return (
@@ -20,7 +28,10 @@ const CardPreview = ({ screen, title, text, github, site, $height }) => {
         $height={$height}
       />
       <CardPreviewTitle>{title}</CardPreviewTitle>
-      <CardPreviewText>{text}</CardPreviewText>
+      <CardPreviewText>
+        <strong>{textTitle}</strong>
+        {text}
+      </CardPreviewText>
       <LinkWrapper>
         <a href={site}>
           <Icon className="fa-solid fa-globe"></Icon>

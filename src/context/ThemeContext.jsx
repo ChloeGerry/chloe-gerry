@@ -21,12 +21,8 @@ const ThemeContextProvider = ({ children }) => {
     filterForeground: 'invert(1)',
   };
 
-  const toggleLightTheme = () => {
-    setTheme(false);
-  };
-
-  const toogleDarkTheme = () => {
-    setTheme(true);
+  const toggleTheme = () => {
+    setTheme(!isDarkTheme);
   };
 
   return (
@@ -35,8 +31,7 @@ const ThemeContextProvider = ({ children }) => {
         isDarkTheme,
         light,
         dark,
-        toggleLightTheme,
-        toogleDarkTheme,
+        toggleTheme,
       }}
     >
       {children}

@@ -18,7 +18,7 @@ export const CardPreviewTitle = styled.h3`
 `;
 
 export const CardPreviewText = styled.p`
-  text-align: center;
+  text-align: justify;
   height: 25%;
   @media (max-width: 768px) {
     height: auto;
