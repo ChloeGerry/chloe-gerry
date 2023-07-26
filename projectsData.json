@@ -1,9 +1,11 @@
 {
     "projects": [
         {
+            "id": 1,
             "screen": "cooked-by-me.jpg",
             "title": "Planner de repas",
-            "description": "Cooked by me est un catalague de recettes en ligne. Il est possible de chercher des recettes spécifiques grâce à une barre de recherche. Cette application permet également de composer son propre planner en ajoutant les plats souhaités au moment voulu (déjeuner / dîner) afin de composer les repas de la semaine. Ce projet m'a permis de découvrir TypeScript et de travailler de la logique algorithmique pure.",
+            "textTitle": "Cooked by me",
+            "description": " est un catalague de recettes en ligne. Il est possible de chercher des recettes spécifiques grâce à une barre de recherche. Cette application permet également de composer son propre planner en ajoutant les plats souhaités au moment voulu (déjeuner / dîner) afin de composer les repas de la semaine. Ce projet m'a permis de découvrir TypeScript et de travailler de la logique algorithmique pure.",
             "gitHub": "https://github.com/ChloeGerry/Cooked-By-Me.git",
             "website": "https://chloegerry.github.io/Cooked-By-Me/",
             "technologies": [
@@ -22,6 +24,7 @@
             ]
         },
         {
+            "id": 2,
             "screen": "kasa.jpg",
             "title": "Application de location immobilière",
             "description": "Refonte totale d'une application immobilière entièrement en React et responsive. Utilisation de react router afin de naviguer entre les différentes pages de l'application. Ce projet m'a permis de découvrir React, le travail par composants et la création de routes.",
@@ -39,6 +42,7 @@
             ]
         },
         {
+            "id": 3,
             "screen": "redux.jpg",
             "title": "Application bancaire",
             "description": "Création d'une application bancaire en React. Utililisation de Redux pour gérer la connexion utilisateur entre les différentes pages de l'application. Ce projet m'a fait découvrir la gestion d'un state global, d'action et de reducers via l'utilisation de Redux.",
@@ -54,12 +58,17 @@
                     "alt": "Logo de React"
                 },
                 {
+                    "logo": "swagger-logo.svg",
+                    "alt": "Logo de Swagger"
+                },
+                {
                     "logo": "styled-components-logo.svg",
                     "alt": "Logo de Styled-components"
                 }
             ]
         },
         {
+            "id": 4,
             "screen": "debug.jpg",
             "title": "Débug d'un site d'événementiel",
             "description": "Débug d'un site existant. Utilisation de librairies comme Jest et React Testing Library pour réaliser des tests unitaires et d'intégration. Ce projet m'a fait découvrir et pratiquer l'utilisation de tests dans un projet.",
@@ -77,6 +86,7 @@
             ]
         },
         {
+            "id": 5,
             "screen": "portfolio.jpg",
             "title": "Portfolio d'une photographe",
             "description": "Création du portfolio d'une photographe. Utilisation de JavaScript pour récupérer dynamiquement les données, ainsi que pour ajouter ou supprimer des travaux. Ce projet m'a fait travailler l'utilisation du CRUD et des call api.",
@@ -98,6 +108,7 @@
             ]
         },
         {
+            "id": 6,
             "screen": "christmas-algorithm.jpg",
             "title": "Algorithme de distribution de cadeau",
             "description": "Algorithme qui défini au hasard la distribution de cadeau au clic sur un bouton. C'est le premier projet JavaScript sur lequel j'ai travaillé, il m'a permis de travailler mon algorithmie.",
