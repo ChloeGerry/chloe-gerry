@@ -1,4 +1,5 @@
 import { styled } from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 export const ProjectsSection = styled.section`
   margin-bottom: 72px;
@@ -23,7 +24,7 @@ export const CardWrapper = styled.article`
   color: #000;
   display: flex;
   flex-direction: column;
-  padding: 16px;
+  padding: 24px;
   border: 1px solid #000;
   border-radius: 15px;
   width: 40%;
@@ -56,7 +57,7 @@ export const IconesCredits = styled.p`
   margin-top: 32px;
 `;
 
-export const PaginationWrapper = styled.div`
+export const PaginationWrapper = styled.nav`
   display: flex;
   justify-content: center;
   margin-top: 32px;
@@ -65,7 +66,7 @@ export const PaginationWrapper = styled.div`
   align-items: center;
 `;
 
-export const Pagination = styled.span`
+export const Pagination = styled(NavLink)`
   cursor: pointer;
   &.isSelected {
     font-weight: bold;

@@ -30,7 +30,7 @@
             "textTitle": "Kasa",
             "description": " est une application immobilière entièrement donc le besoin était de faire une refonte totale du site en React et qui soit responsive. J'ai utilisé react router afin de naviguer entre les différentes pages de l'application. Ce projet m'a permis de découvrir React, le travail par composants et la création de routes.",
             "gitHub": "https://github.com/ChloeGerry/Kasa-P8.git",
-            "website": "",
+            "website": "https://chloegerry.github.io/Kasa-P8/",
             "technologies": [
                 {
                     "logo": "react-logo.svg",
@@ -76,7 +76,7 @@
             "textTitle": "77 Events",
             "description": " est une agence d'événementiel dont le besoin était de débugger leur site. J'ai exploité des librairies comme Jest et React Testing Library pour réaliser des tests unitaires et d'intégration. Ce projet m'a fait découvrir et pratiquer l'utilisation de tests.",
             "gitHub": "https://github.com/ChloeGerry/Debugguer-P10.git",
-            "website": "",
+            "website": "https://chloegerry.github.io/Debugguer-P10/",
             "technologies": [
                 {
                     "logo": "jest-logo.svg",
@@ -118,7 +118,7 @@
             "textTitle": "Algorithme",
             "description": " qui défini au hasard la distribution de cadeau au clic sur un bouton. C'est le premier projet JavaScript sur lequel j'ai travaillé, il m'a permis de travailler mon algorithmie.",
             "gitHub": "https://github.com/ChloeGerry/Algorithme-de-Noel.git",
-            "website": "",
+            "website": "https://chloegerry.github.io/Algorithme-de-Noel/",
             "technologies": [
                 {
                     "logo": "javascript-logo.svg",

@@ -12,6 +12,7 @@ import {
 } from './Home.style';
 import { useState, useContext } from 'react';
 import { ThemeContext } from '../../context/themeContext';
+import { NavLink } from 'react-router-dom';
 
 const Home = () => {
   const { isDarkTheme, light, dark } = useContext(ThemeContext);
@@ -29,10 +30,12 @@ const Home = () => {
         <>
           <ModalWrapper open theme={theme}>
             <CloseIconWrapper>
-              <CloseIcon
-                className="fa-solid fa-xmark"
-                onClick={() => setModalOpen(false)}
-              ></CloseIcon>
+              <NavLink>
+                <CloseIcon
+                  className="fa-solid fa-xmark"
+                  onClick={() => setModalOpen(false)}
+                ></CloseIcon>
+              </NavLink>
             </CloseIconWrapper>
             <ModalTitle>Présentation</ModalTitle>
             <p>
@@ -77,12 +80,13 @@ const Home = () => {
           />
           <MainTitle theme={theme}>Chloé Gerry</MainTitle>
           <Subtitle theme={theme}>Développeuse Front-end</Subtitle>
-          <ProfilePicture
-            onClick={handleModal}
-            src="assets/portrait.jpeg"
-            alt="Photo de Chloé Gerry"
-            theme={theme}
-          />
+          <NavLink onClick={handleModal}>
+            <ProfilePicture
+              src="assets/portrait.jpeg"
+              alt="Photo de Chloé Gerry"
+              theme={theme}
+            />
+          </NavLink>
         </HomeSection>
       )}
     </>
