@@ -4,7 +4,6 @@ import {
   CardPreviewText,
   LinkWrapper,
   Icon,
-  GitHubLogo,
 } from './cardPreview.style';
 import { useContext } from 'react';
 import { ThemeContext } from '../../context/themeContext';
@@ -18,7 +17,8 @@ const CardPreview = ({
   site,
   $height,
 }) => {
-  const { isDarkTheme } = useContext(ThemeContext);
+  const { isDarkTheme, light, dark } = useContext(ThemeContext);
+  const theme = isDarkTheme ? dark : light;
 
   return (
     <>
@@ -34,21 +34,10 @@ const CardPreview = ({
       </CardPreviewText>
       <LinkWrapper>
         <a href={site}>
-          <Icon className="fa-solid fa-globe"></Icon>
+          <Icon className="fa-solid fa-globe" theme={theme}></Icon>
         </a>
         <a href={github}>
-          {isDarkTheme ? (
-            <GitHubLogo
-              src="assets/github-logo.svg"
-              alt="Lien du Repository GitHub"
-              $filter="invert(1)"
-            />
-          ) : (
-            <GitHubLogo
-              src="assets/github-logo.svg"
-              alt="Lien du Repository GitHub"
-            />
-          )}
+          <img src="assets/github-logo.svg" alt="Lien du Repository GitHub" />
         </a>
       </LinkWrapper>
     </>

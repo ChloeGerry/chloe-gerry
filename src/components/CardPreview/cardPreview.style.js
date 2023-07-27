@@ -33,8 +33,5 @@ export const LinkWrapper = styled.div`
 export const Icon = styled.i`
   font-size: 45px;
   padding-right: 16px;
-`;
-
-export const GitHubLogo = styled.img`
-  filter: ${({ $filter }) => $filter};
+  filter: ${({ theme }) => theme.filterForeground};
 `;

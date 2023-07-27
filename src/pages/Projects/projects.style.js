@@ -19,16 +19,17 @@ export const CardsContainer = styled.div`
 `;
 
 export const CardWrapper = styled.article`
+  background-color: #fff;
+  color: #000;
   display: flex;
   flex-direction: column;
   padding: 16px;
-  border: 1px solid #a6bcdd;
+  border: 1px solid #000;
   border-radius: 15px;
   width: 40%;
   height: auto;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 3px 3px 10px 0px #a6bcdd;
 
   @media (max-width: 1300px) {
     height: 1000px;
@@ -53,4 +54,20 @@ export const IconesCredits = styled.p`
   font-size: 1rem;
   font-style: italic;
   margin-top: 32px;
+`;
+
+export const PaginationWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  gap: 16px;
+  font-size: 20px;
+  align-items: center;
+`;
+
+export const Pagination = styled.span`
+  cursor: pointer;
+  &.isSelected {
+    font-weight: bold;
+  }
 `;
