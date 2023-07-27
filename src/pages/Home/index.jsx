@@ -46,11 +46,13 @@ const Home = () => {
             <HomeImageBackground
               src="assets/home.jpg"
               $transform="translateZ(-10px) scale(2)"
+              alt="Fond d'écran d'une bulle de couleur"
               theme={theme}
             />
             <HomeImageForeground
               src="assets/bubbles.png"
-              $transform="translateZ(-5px) scale(1.5);"
+              $transform="translateZ(-5px) scale(1.5)"
+              alt="Fond d'écran de gouttes d'eau"
               theme={theme}
             />
             <ProfilePicture
