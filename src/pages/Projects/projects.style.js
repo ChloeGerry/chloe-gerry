@@ -1,5 +1,17 @@
-import { styled } from 'styled-components';
+import { styled, keyframes } from 'styled-components';
 import { NavLink } from 'react-router-dom';
+
+const fadeIn = keyframes`
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+`;
 
 export const ProjectsSection = styled.section`
   margin-bottom: 72px;
@@ -28,9 +40,10 @@ export const CardWrapper = styled.article`
   border: 1px solid #000;
   border-radius: 15px;
   width: 40%;
-  height: auto;
+  height: 648px;
   align-items: center;
   justify-content: space-between;
+  animation: ${fadeIn} 0.3s ease;
 
   @media (max-width: 1300px) {
     height: 1000px;
@@ -45,6 +58,7 @@ export const CardWrapper = styled.article`
 export const ListContainer = styled.ul`
   display: flex;
   padding: 0;
+  margin: 0 0 16px 0;
   gap: 8px;
   flex-wrap: wrap;
   justify-content: center;
@@ -60,7 +74,7 @@ export const IconesCredits = styled.p`
 export const PaginationWrapper = styled.nav`
   display: flex;
   justify-content: center;
-  margin-top: 32px;
+  margin-top: 16px;
   gap: 16px;
   font-size: 20px;
   align-items: center;

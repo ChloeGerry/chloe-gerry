@@ -30,17 +30,14 @@ const Home = () => {
         <>
           <ModalWrapper open theme={theme}>
             <CloseIconWrapper>
-              <NavLink>
-                <CloseIcon
-                  className="fa-solid fa-xmark"
-                  onClick={() => setModalOpen(false)}
-                ></CloseIcon>
+              <NavLink onClick={() => setModalOpen(false)}>
+                <CloseIcon className="fa-solid fa-xmark"></CloseIcon>
               </NavLink>
             </CloseIconWrapper>
             <ModalTitle>Présentation</ModalTitle>
             <p>
               Après avoir travaillé 7 ans dans le social, j'aspirais à changer
-              de vie. Je me suis donc lancée dans la grande aventure du
+              de carrière. Je me suis donc lancée dans la grande aventure du
               développement web et plus particulièrement du front-end.
             </p>
             <a href="resume.pdf">Mon CV</a>

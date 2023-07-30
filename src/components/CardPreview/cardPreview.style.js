@@ -28,10 +28,10 @@ export const CardPreviewText = styled.p`
 export const LinkWrapper = styled.div`
   display: flex;
   align-items: center;
+  gap: 16px;
 `;
 
 export const Icon = styled.i`
   font-size: 45px;
-  padding-right: 16px;
   filter: ${({ theme }) => theme.filterForeground};
 `;
