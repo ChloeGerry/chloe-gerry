@@ -1,7 +1,9 @@
 import { useContext } from 'react';
 import { ThemeContext } from '../../context/themeContext';
-import { ThemeToggleStyled, ThemeIcons } from './theme.style';
+import { ThemeToggleStyled } from './theme.style';
 import Button from '../Button';
+import LightModeIcon from '@mui/icons-material/LightMode';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
 
 const ThemeToggle = () => {
   const { toggleTheme, isDarkTheme } = useContext(ThemeContext);
@@ -9,11 +11,7 @@ const ThemeToggle = () => {
   return (
     <ThemeToggleStyled>
       <Button onClick={toggleTheme}>
-        {isDarkTheme ? (
-          <ThemeIcons className="fa-solid fa-sun"></ThemeIcons>
-        ) : (
-          <ThemeIcons className="fa-solid fa-moon"></ThemeIcons>
-        )}
+        {isDarkTheme ? <LightModeIcon /> : <DarkModeIcon />}
       </Button>
     </ThemeToggleStyled>
   );

@@ -13,7 +13,6 @@ const App = () => {
   return (
     <ThemeContextProvider>
       <GlobalStyle />
-      <Arrow />
       <AppWrapper>
         <Header />
         <Home />
@@ -22,6 +21,7 @@ const App = () => {
         <Contact />
         <Footer />
       </AppWrapper>
+      <Arrow />
     </ThemeContextProvider>
   );
 };

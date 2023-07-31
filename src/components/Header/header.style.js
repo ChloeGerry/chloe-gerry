@@ -19,7 +19,6 @@ export const Navigation = styled.nav`
   font-size: 1.2rem;
 
   @media (max-width: 768px) {
-    /* width: fit-content; */
     width: 90%;
     display: flex;
     align-items: center;

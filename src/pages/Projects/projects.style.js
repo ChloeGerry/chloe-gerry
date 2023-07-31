@@ -75,8 +75,8 @@ export const PaginationWrapper = styled.nav`
   display: flex;
   justify-content: center;
   margin-top: 16px;
-  gap: 16px;
-  font-size: 20px;
+  gap: 24px;
+  font-size: 24px;
   align-items: center;
 `;
 

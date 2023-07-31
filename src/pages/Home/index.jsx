@@ -42,7 +42,7 @@ const Home = () => {
             </p>
             <a href="resume.pdf">Mon CV</a>
           </ModalWrapper>
-          <HomeSection>
+          <HomeSection id="home">
             <HomeImageBackground
               src="assets/home.jpg"
               $transform="translateZ(-10px) scale(2)"
@@ -64,7 +64,7 @@ const Home = () => {
           </HomeSection>
         </>
       ) : (
-        <HomeSection>
+        <HomeSection id="home">
           <HomeImageBackground
             src="assets/home.jpg"
             $transform="translateZ(-10px) scale(2)"
