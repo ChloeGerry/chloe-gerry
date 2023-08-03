@@ -38,7 +38,10 @@ const Home = () => {
             <p>
               Après avoir travaillé 7 ans dans le social, j'aspirais à changer
               de carrière. Je me suis donc lancée dans la grande aventure du
-              développement web et plus particulièrement du front-end.
+              développement web et plus particulièrement du front-end. Je suis
+              passionée par React et le travail par composant en général.
+              L'écosystème front-end est très développé et j'ai hâte d'en
+              apprendre encore plus à son sujet.
             </p>
             <a href="resume.pdf">Mon CV</a>
           </ModalWrapper>

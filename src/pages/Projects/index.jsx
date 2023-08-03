@@ -78,7 +78,7 @@ const Projects = () => {
                     text={description}
                     github={gitHub}
                     site={website}
-                    $height="68%"
+                    $height="46%"
                   />
                 ) : (
                   <CardPreview
