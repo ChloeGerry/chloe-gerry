@@ -93,7 +93,7 @@
             "screen": "portfolio.jpg",
             "title": "Portfolio d'une photographe",
             "textTitle": "Nina Carducci",
-            "description": " est une photographe dont l'envie était de création son portfolio en ligne. J'ai utilisé JavaScript pour récupérer dynamiquement les données, ainsi que pour ajouter ou supprimer des travaux. Ce projet m'a fait travailler l'utilisation du CRUD et des call api.",
+            "description": " est une photographe dont l'envie était de création son portfolio en ligne. J'ai utilisé JavaScript pour récupérer dynamiquement les données, ainsi que pour ajouter ou supprimer des travaux. Ce projet m'a fait travailler l'utilisation du CRUD et des appels à l'api.",
             "gitHub": "https://github.com/ChloeGerry/Portfolio-P6.git",
             "website": "",
             "technologies": [
