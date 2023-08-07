@@ -47,16 +47,14 @@ const Home = () => {
           </ModalWrapper>
           <HomeSection id="home">
             <HomeImageBackground
-              src="assets/home.jpg"
+              src="assets/home-bg.png"
               $transform="translateZ(-10px) scale(2)"
-              alt="Fond d'écran d'une bulle de couleur"
-              theme={theme}
+              alt="Paysage avec des oiseaux"
             />
             <HomeImageForeground
-              src="assets/bubbles.png"
+              src="assets/home-fg.png"
               $transform="translateZ(-5px) scale(1.5)"
-              alt="Fond d'écran de gouttes d'eau"
-              theme={theme}
+              alt="Arbres"
             />
             <ProfilePicture
               onClick={handleModal}
@@ -69,14 +67,14 @@ const Home = () => {
       ) : (
         <HomeSection id="home">
           <HomeImageBackground
-            src="assets/home.jpg"
+            src="assets/home-bg.png"
             $transform="translateZ(-10px) scale(2)"
-            theme={theme}
+            alt="Paysage avec des oiseaux"
           />
           <HomeImageForeground
-            src="assets/bubbles.png"
-            $transform="translateZ(-5px) scale(1.5);"
-            theme={theme}
+            src="assets/home-fg.png"
+            $transform="translateZ(-5px) scale(1.5)"
+            alt="Arbres"
           />
           <MainTitle theme={theme}>Chloé Gerry</MainTitle>
           <Subtitle theme={theme}>Développeuse Front-end</Subtitle>

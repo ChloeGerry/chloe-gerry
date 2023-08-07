@@ -18,7 +18,6 @@ export const HomeImageForeground = styled.img`
   object-fit: cover;
   z-index: -1;
   transform: ${({ $transform }) => $transform};
-  filter: ${({ theme }) => theme.filterForeground};
 `;
 
 export const HomeImageBackground = styled.img`
@@ -28,19 +27,18 @@ export const HomeImageBackground = styled.img`
   object-fit: cover;
   z-index: -1;
   transform: ${({ $transform }) => $transform};
-  filter: ${({ theme }) => theme.filterBackground};
 `;
 
 export const MainTitle = styled.h1`
   font-size: 3rem;
-  color: ${({ theme }) => theme.text};
+  color: ${({ theme }) => theme.title};
   @media (max-width: 768px) {
     margin: 0;
   }
 `;
 
 export const Subtitle = styled.h2`
-  color: ${({ theme }) => theme.text};
+  color: ${({ theme }) => theme.title};
 
   @media (max-width: 688px) {
     margin: 0;
@@ -60,7 +58,7 @@ export const ProfilePicture = styled.img`
   left: 2%;
   bottom: 4%;
   cursor: pointer;
-  border: ${({ theme }) => theme.border};
+  border: ${({ theme }) => theme.borderImage};
 
   @media (max-width: 688px) {
     width: 90px;

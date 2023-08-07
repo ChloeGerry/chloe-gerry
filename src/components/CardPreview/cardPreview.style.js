@@ -33,5 +33,5 @@ export const LinkWrapper = styled.div`
 
 export const Icon = styled.i`
   font-size: 45px;
-  filter: ${({ theme }) => theme.filterForeground};
+  filter: ${({ theme }) => theme.filter};
 `;

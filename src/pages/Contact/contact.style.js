@@ -17,5 +17,5 @@ export const LinksWrapper = styled.div`
 `;
 
 export const GitHubLogo = styled.img`
-  filter: ${({ theme }) => theme.filterForeground};
+  filter: ${({ theme }) => theme.filter};
 `;
