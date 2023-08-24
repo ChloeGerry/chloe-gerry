@@ -6,22 +6,25 @@ import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import { AppWrapper } from './style/app.style';
 import ThemeContextProvider from './context/themeContext';
+import DataContextProvider from './context/DataContext';
 import GlobalStyle from './style/globalStyle';
 import Arrow from './components/Arrow';
 
 const App = () => {
   return (
     <ThemeContextProvider>
-      <GlobalStyle />
-      <AppWrapper>
-        <Header />
-        <Home />
-        <Experience />
-        <Projects />
-        <Contact />
-        <Footer />
-      </AppWrapper>
-      <Arrow />
+      <DataContextProvider>
+        <GlobalStyle />
+        <AppWrapper>
+          <Header />
+          <Home />
+          <Experience />
+          <Projects />
+          <Contact />
+          <Footer />
+        </AppWrapper>
+        <Arrow />
+      </DataContextProvider>
     </ThemeContextProvider>
   );
 };

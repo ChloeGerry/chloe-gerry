@@ -7,6 +7,7 @@ import {
 } from './cardPreview.style';
 import { useContext } from 'react';
 import { ThemeContext } from '../../context/themeContext';
+import { DataContext } from '../../context/DataContext';
 
 const CardPreview = ({
   screen,
@@ -18,7 +19,10 @@ const CardPreview = ({
   $height,
 }) => {
   const { isDarkTheme, light, dark } = useContext(ThemeContext);
+  const { projectData } = useContext(DataContext);
   const theme = isDarkTheme ? dark : light;
+
+  console.log('projectData', projectData);
 
   return (
     <>
@@ -33,9 +37,14 @@ const CardPreview = ({
         {text}
       </CardPreviewText>
       <LinkWrapper>
-        <a href={site}>
-          <Icon className="fa-solid fa-globe" theme={theme}></Icon>
-        </a>
+        {projectData.map(
+          ({ deployed }) =>
+            deployed && (
+              <a href={site}>
+                <Icon className="fa-solid fa-globe" theme={theme}></Icon>
+              </a>
+            )
+        )}
         <a href={github}>
           <img src="assets/github-logo.svg" alt="Lien du Repository GitHub" />
         </a>

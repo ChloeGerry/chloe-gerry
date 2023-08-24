@@ -10,26 +10,20 @@ import {
   PaginationWrapper,
   Pagination,
 } from './projects.style';
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 import { ThemeContext } from '../../context/themeContext';
+import { DataContext } from '../../context/DataContext';
 import { useState } from 'react';
 import Loader from '../../components/Loader';
 
 const Projects = () => {
   const { isDarkTheme, light, dark } = useContext(ThemeContext);
+  const { projectData } = useContext(DataContext);
   const theme = isDarkTheme ? dark : light;
   const path = 'assets/';
-  const [projectData, getProjectsData] = useState([]);
   const projectsPerPage = 2;
   let numberOFPages = 0;
   const [currentPage, setCurrentPage] = useState(1);
-
-  useEffect(() => {
-    fetch('https://chloegerry.github.io/chloe-gerry/projectsData.json')
-      .then((response) => response.json())
-      .then((data) => getProjectsData(data.projects))
-      .catch((error) => console.log(error));
-  }, []);
 
   if (!projectData) {
     return <Loader />;
