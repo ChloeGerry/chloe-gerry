@@ -50,6 +50,7 @@ const Projects = () => {
             description,
             gitHub,
             website,
+            deployed,
           }) => {
             return (
               <CardWrapper key={id}>
@@ -73,6 +74,17 @@ const Projects = () => {
                     github={gitHub}
                     site={website}
                     $height="46%"
+                    deployed={true}
+                  />
+                ) : deployed ? (
+                  <CardPreview
+                    screen={`${path}${screen}`}
+                    title={title}
+                    textTitle={textTitle}
+                    text={description}
+                    github={gitHub}
+                    site={website}
+                    deployed={true}
                   />
                 ) : (
                   <CardPreview
@@ -81,7 +93,7 @@ const Projects = () => {
                     textTitle={textTitle}
                     text={description}
                     github={gitHub}
-                    site={website}
+                    deployed={false}
                   />
                 )}
               </CardWrapper>

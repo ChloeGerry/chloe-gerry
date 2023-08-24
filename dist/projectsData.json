@@ -21,7 +21,8 @@
                     "logo": "styled-components-logo.svg",
                     "alt": "Logo de Styled-components"
                 }
-            ]
+            ],
+            "deployed": true
         },
         {
             "id": 2,
@@ -40,7 +41,8 @@
                     "logo": "css3-logo.svg",
                     "alt": "Logo de CSS3"
                 }
-            ]
+            ],
+            "deployed": true
         },
         {
             "id": 3,
@@ -67,7 +69,8 @@
                     "logo": "styled-components-logo.svg",
                     "alt": "Logo de Styled-components"
                 }
-            ]
+            ],
+            "deployed": false
         },
         {
             "id": 4,
@@ -86,7 +89,8 @@
                     "logo": "react-logo.svg",
                     "alt": "Logo de React"
                 }
-            ]
+            ],
+            "deployed": false
         },
         {
             "id": 5,
@@ -109,7 +113,8 @@
                     "logo": "css3-logo.svg",
                     "alt": "Logo de CSS3"
                 }
-            ]
+            ],
+            "deployed": false
         },
         {
             "id": 6,
@@ -124,7 +129,8 @@
                     "logo": "javascript-logo.svg",
                     "alt": "Logo de JavaScript"
                 }
-            ]
+            ],
+            "deployed": true
         }
     ]
 }
