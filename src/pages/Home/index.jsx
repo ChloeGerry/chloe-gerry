@@ -7,8 +7,7 @@ import {
   ProfilePicture,
   MainTitle,
   Subtitle,
-  HomeImageForeground,
-  HomeImageBackground,
+  HomeImage,
 } from './Home.style';
 import { useState, useContext } from 'react';
 import { ThemeContext } from '../../context/themeContext';
@@ -46,12 +45,12 @@ const Home = () => {
             <a href="resume.pdf">Mon CV</a>
           </ModalWrapper>
           <HomeSection id="home">
-            <HomeImageBackground
+            <HomeImage
               src="assets/home-bg.png"
               $transform="translateZ(-10px) scale(2)"
               alt="Paysage avec des oiseaux"
             />
-            <HomeImageForeground
+            <HomeImage
               src="assets/home-fg.png"
               $transform="translateZ(-5px) scale(1.5)"
               alt="Arbres"
@@ -66,12 +65,12 @@ const Home = () => {
         </>
       ) : (
         <HomeSection id="home">
-          <HomeImageBackground
+          <HomeImage
             src="assets/home-bg.png"
             $transform="translateZ(-10px) scale(2)"
             alt="Paysage avec des oiseaux"
           />
-          <HomeImageForeground
+          <HomeImage
             src="assets/home-fg.png"
             $transform="translateZ(-5px) scale(1.5)"
             alt="Arbres"

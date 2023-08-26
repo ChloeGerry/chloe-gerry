@@ -11,16 +11,7 @@ export const HomeSection = styled.section`
   z-index: -1;
 `;
 
-export const HomeImageForeground = styled.img`
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  z-index: -1;
-  transform: ${({ $transform }) => $transform};
-`;
-
-export const HomeImageBackground = styled.img`
+export const HomeImage = styled.img`
   position: absolute;
   height: 100%;
   width: 100%;
