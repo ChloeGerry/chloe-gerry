@@ -29,6 +29,9 @@ export const CardsContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
+  @media (max-width: 400px) {
+    margin: 0 40px;
+  }
 `;
 
 export const CardWrapper = styled.article`
@@ -53,6 +56,10 @@ export const CardWrapper = styled.article`
     width: 100%;
     height: 800px;
   }
+  @media (max-width: 400px) {
+    padding: 16px;
+    height: 900px;
+  }
 `;
 
 export const ListContainer = styled.ul`
@@ -68,7 +75,7 @@ export const IconesCredits = styled.p`
   text-align: center;
   font-size: 1rem;
   font-style: italic;
-  margin-top: 32px;
+  margin: 32px 8px 0px 8px;
 `;
 
 export const PaginationWrapper = styled.nav`

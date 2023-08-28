@@ -8,4 +8,8 @@ export const ArrowIcon = styled.i`
   right: 2%;
   bottom: 2%;
   cursor: pointer;
+
+  @media (max-width: 400px) {
+    padding: 0 8px;
+  }
 `;

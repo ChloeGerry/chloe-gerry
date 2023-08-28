@@ -33,6 +33,9 @@ export const Navigation = styled.nav`
     justify-content: center;
     top: 100px;
   }
+  @media (max-width: 300px) {
+    padding: 0;
+  }
 `;
 
 export const Anchor = styled.a`

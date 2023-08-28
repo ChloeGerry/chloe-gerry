@@ -40,20 +40,39 @@ export const Subtitle = styled.h2`
   }
 `;
 
+export const ProfilePictureWrapper = styled.div`
+  position: absolute;
+  left: 2%;
+  bottom: 4%;
+`;
+
 export const ProfilePicture = styled.img`
   width: 112px;
   height: 149px;
   object-fit: contain;
   border-radius: 10px;
-  position: absolute;
-  left: 2%;
-  bottom: 4%;
   cursor: pointer;
   border: ${({ theme }) => theme.borderImage};
 
   @media (max-width: 688px) {
     width: 90px;
     height: 120px;
+  }
+`;
+
+export const ProfilePictureText = styled.span`
+  position: absolute;
+  left: 50%;
+  bottom: -10%;
+  transform: translate(-50%, -50%);
+  background-color: ${({ theme }) => theme.background};
+  color: ${({ theme }) => theme.text};
+  padding: 4px 8px;
+  border-radius: 5px;
+  text-align: center;
+  @media (max-width: 400px) {
+    bottom: -15%;
+    padding: 4px;
   }
 `;
 
@@ -68,7 +87,10 @@ export const ModalWrapper = styled.dialog`
   color: ${({ theme }) => theme.text};
   background-color: ${({ theme }) => theme.background};
   @media (max-width: 320px) {
-    bottom: -250px;
+    top: 60%;
+    left: 48%;
+    padding: 8px;
+    margin: 8px;
   }
 `;
 
@@ -83,4 +105,7 @@ export const CloseIcon = styled.i`
 
 export const ModalTitle = styled.h2`
   margin: 24px 8px 24px 8px;
+  @media (max-width: 320px) {
+    margin: 0 4px;
+  }
 `;
