@@ -2,13 +2,14 @@ import { styled } from 'styled-components';
 
 export const ExperienceWrapper = styled.section`
   text-align: center;
-  margin-bottom: -32px;
-  padding: 2rem 2rem 9rem 2rem;
+  margin-bottom: -100px;
+  padding: 2rem 2rem 15rem 2rem;
   color: ${({ theme }) => theme.text};
   background-color: ${({ theme }) => theme.background};
 
   @media (max-width: 768px) {
     margin-bottom: 0;
+    padding: 2rem 2rem 9rem 2rem;
   }
 
   @media (max-width: 400px) {

@@ -10,7 +10,7 @@ const DataContextProvider = ({ children }) => {
   });
 
   useEffect(() => {
-    fetch('https://chloegerry.github.io/chloe-gerry/projectsData.json')
+    fetch('https://chloegerry.github.io/chloe-gerry/portfolioData.json')
       .then((response) => response.json())
       .then((data) =>
         getPortfolioData({

@@ -9,12 +9,11 @@ const Experience = () => {
   const { isDarkTheme, light, dark } = useContext(ThemeContext);
   const theme = isDarkTheme ? dark : light;
   const { portfolioData } = useContext(DataContext);
+  const path = 'assets/';
 
   if (!portfolioData) {
     return <Loader />;
   }
-
-  console.log('portfolioData', portfolioData);
 
   return (
     <ExperienceWrapper id="experience" theme={theme}>
@@ -35,7 +34,7 @@ const Experience = () => {
             return (
               <List
                 key={id}
-                logo={`assets/${logo}`}
+                logo={`${path}/${logo}`}
                 description={description}
                 text={name}
               />
@@ -47,31 +46,33 @@ const Experience = () => {
         <h3>Outils</h3>
         <ListWrapper>
           {portfolioData.tools.map(({ id, name, logo, description }) => {
-            return (
+            return isDarkTheme && id === 2 ? (
               <List
                 key={id}
-                logo={`assets/${logo}`}
+                logo={`${path}/${logo}`}
                 description={description}
                 text={name}
+                $filter="invert(1)"
               />
+            ) : (
+              (
+                <List
+                  key={id}
+                  logo={`${path}/${logo}`}
+                  description={description}
+                  text={name}
+                />
+              ) && (
+                <List
+                  key={id}
+                  logo={`${path}/${logo}`}
+                  description={description}
+                  text={name}
+                />
+              )
             );
           })}
         </ListWrapper>
-        {/* 
-          {isDarkTheme ? (
-            <List
-              logo="assets/github-logo.svg"
-              description="Logo de GitHub"
-              text="GitHub"
-              $filter="invert(1)"
-            />
-          ) : (
-            <List
-              logo="assets/github-logo.svg"
-              description="Logo de GitHub"
-              text="GitHub"
-            />
-          )} */}
       </Article>
     </ExperienceWrapper>
   );
