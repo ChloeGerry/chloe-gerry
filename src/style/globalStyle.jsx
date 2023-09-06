@@ -19,11 +19,19 @@ const StyledGlobalStyle = createGlobalStyle`
   }
 
   h2 {
+    font-size: 3.4rem;
+
+    @media (max-width: 768px) {
     font-size: 2.4rem;
+  }
   }
 
   h3 {
     font-size: 2.1rem;
+
+    @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
   }
 
   p {

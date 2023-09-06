@@ -5,6 +5,4 @@ export const AppWrapper = styled.div`
   overflow-y: auto;
   overflow-x: hidden;
   perspective: 10px;
-  color: ${({ theme }) => theme.text};
-  background-color: ${({ theme }) => theme.background};
 `;

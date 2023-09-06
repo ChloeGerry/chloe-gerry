@@ -8,8 +8,8 @@ export const HeaderStyled = styled.header`
 
 export const Navigation = styled.nav`
   display: flex;
-  gap: 24px;
-  padding: 8px;
+  gap: 40px;
+  padding: 8px 16px;
   background-color: ${({ theme }) => theme.background};
   border-radius: 5px;
   position: fixed;
@@ -17,24 +17,23 @@ export const Navigation = styled.nav`
   right: 32px;
   z-index: 1;
   font-size: 1.2rem;
+  border: ${({ theme }) => theme.border};
 
   @media (max-width: 768px) {
-    width: 90%;
+    top: 100px;
+    width: 91%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    top: 90px;
     left: 50%;
     transform: translate(-50%, -50%);
   }
   @media (max-width: 400px) {
     flex-wrap: wrap;
     justify-content: center;
-    top: 100px;
-  }
-  @media (max-width: 300px) {
-    padding: 0;
+    padding: 8px;
+    gap: 16px;
   }
 `;
 

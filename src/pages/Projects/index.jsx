@@ -18,23 +18,23 @@ import Loader from '../../components/Loader';
 
 const Projects = () => {
   const { isDarkTheme, light, dark } = useContext(ThemeContext);
-  const { projectData } = useContext(DataContext);
+  const { portfolioData } = useContext(DataContext);
   const theme = isDarkTheme ? dark : light;
   const path = 'assets/';
   const projectsPerPage = 2;
   let numberOFPages = 0;
   const [currentPage, setCurrentPage] = useState(1);
 
-  if (!projectData) {
+  if (!portfolioData) {
     return <Loader />;
   }
 
-  const slicesProjects = projectData.slice(
+  const slicesProjects = portfolioData.projects.slice(
     (currentPage - 1) * projectsPerPage,
     currentPage * projectsPerPage
   );
 
-  numberOFPages = Math.ceil(projectData.length / projectsPerPage);
+  numberOFPages = Math.ceil(portfolioData.projects.length / projectsPerPage);
 
   return (
     <ProjectsSection id="projects" theme={theme}>

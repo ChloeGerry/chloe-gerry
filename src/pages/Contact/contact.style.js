@@ -6,7 +6,11 @@ export const ContactWrapper = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 72px;
+  padding-bottom: 6rem;
+
+  @media (max-width: 400px) {
+    padding-bottom: 3rem;
+  }
 `;
 
 export const LinksWrapper = styled.div`

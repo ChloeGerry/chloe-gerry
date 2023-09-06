@@ -21,18 +21,33 @@ export const HomeImage = styled.img`
 `;
 
 export const MainTitle = styled.h1`
-  font-size: 3rem;
+  font-size: 5rem;
+  margin-bottom: 0;
   color: ${({ theme }) => theme.title};
+  text-shadow: 0 0 5px #000;
   @media (max-width: 768px) {
+    font-size: 3rem;
+  }
+  @media (max-width: 400px) {
     margin: 0;
   }
 `;
 
 export const Subtitle = styled.h2`
   color: ${({ theme }) => theme.title};
+  text-shadow: 0 0 5px #000;
+  @media (max-width: 890px) {
+    width: 50%;
+    text-align: center;
+  }
 
-  @media (max-width: 688px) {
-    margin: 0;
+  @media (max-width: 768px) {
+    font-size: 1.4rem;
+    margin: 16px 0;
+  }
+
+  @media (max-width: 400px) {
+    margin: 8px 0;
   }
 
   @media (max-width: 400px) {
@@ -43,7 +58,7 @@ export const Subtitle = styled.h2`
 export const ProfilePictureWrapper = styled.div`
   position: absolute;
   left: 2%;
-  bottom: 4%;
+  bottom: 2%;
 `;
 
 export const ProfilePicture = styled.img`
@@ -54,7 +69,7 @@ export const ProfilePicture = styled.img`
   cursor: pointer;
   border: ${({ theme }) => theme.borderImage};
 
-  @media (max-width: 688px) {
+  @media (max-width: 768px) {
     width: 90px;
     height: 120px;
   }
@@ -63,16 +78,17 @@ export const ProfilePicture = styled.img`
 export const ProfilePictureText = styled.span`
   position: absolute;
   left: 50%;
-  bottom: -10%;
+  bottom: 0%;
   transform: translate(-50%, -50%);
   background-color: ${({ theme }) => theme.background};
   color: ${({ theme }) => theme.text};
   padding: 4px 8px;
   border-radius: 5px;
   text-align: center;
-  @media (max-width: 400px) {
-    bottom: -15%;
-    padding: 4px;
+  width: 60%;
+
+  @media (max-width: 768px) {
+    width: 70%;
   }
 `;
 

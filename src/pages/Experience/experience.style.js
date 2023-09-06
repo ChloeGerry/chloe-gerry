@@ -2,10 +2,18 @@ import { styled } from 'styled-components';
 
 export const ExperienceWrapper = styled.section`
   text-align: center;
-  margin-bottom: 72px;
-  padding: 2rem;
+  margin-bottom: -32px;
+  padding: 2rem 2rem 9rem 2rem;
   color: ${({ theme }) => theme.text};
   background-color: ${({ theme }) => theme.background};
+
+  @media (max-width: 768px) {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 400px) {
+    padding: 2rem 2rem 3rem 2rem;
+  }
 `;
 
 export const Article = styled.article`

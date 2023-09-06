@@ -14,9 +14,13 @@ const fadeIn = keyframes`
 `;
 
 export const ProjectsSection = styled.section`
-  margin-bottom: 72px;
+  padding: 0 2rem 9rem 2rem;
   color: ${({ theme }) => theme.text};
   background-color: ${({ theme }) => theme.background};
+
+  @media (max-width: 400px) {
+    padding: 0 2.5rem 3rem 2.5rem;
+  }
 `;
 
 export const ProjectsMainTitle = styled.h2`
@@ -25,13 +29,9 @@ export const ProjectsMainTitle = styled.h2`
 
 export const CardsContainer = styled.div`
   display: flex;
-  margin: 0 32px;
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
-  @media (max-width: 400px) {
-    margin: 0 40px;
-  }
 `;
 
 export const CardWrapper = styled.article`
@@ -43,7 +43,7 @@ export const CardWrapper = styled.article`
   border: 1px solid #000;
   border-radius: 15px;
   width: 40%;
-  height: 648px;
+  height: auto;
   align-items: center;
   justify-content: space-between;
   animation: ${fadeIn} 0.3s ease;

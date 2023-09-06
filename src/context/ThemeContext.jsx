@@ -7,7 +7,7 @@ const ThemeContextProvider = ({ children }) => {
 
   const light = {
     text: '#000',
-    title: '#000',
+    title: '#fff',
     background: '#fff',
     border: '1px solid #000',
     borderImage: '1px solid #fff',
@@ -16,7 +16,7 @@ const ThemeContextProvider = ({ children }) => {
 
   const dark = {
     text: '#fff',
-    title: '#000',
+    title: '#fff',
     background: '#000',
     border: '1px solid #fff',
     borderImage: '1px solid #fff',
