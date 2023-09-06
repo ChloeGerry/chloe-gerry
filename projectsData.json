@@ -132,5 +132,99 @@
             ],
             "deployed": true
         }
+    ],
+    "technologies" : [
+        {
+            "id": 1,
+            "logo": "javascript-logo.svg",
+            "name": "JavaScript",
+            "description": "Logo de JavaScript"
+        },
+        {
+            "id": 2,
+            "logo": "typescript-logo.svg",
+            "name": "TypeScript",
+            "description": "Logo de Typescript"
+        },
+        {
+            "id": 3,
+            "logo": "react-logo.svg",
+            "name": "React",
+            "description": "Logo de React"
+        },
+        {
+            "id": 4,
+            "logo": "redux-logo.svg",
+            "name": "Redux",
+            "description": "Logo de Redux"
+        },
+        {
+            "id": 5,
+            "logo": "jest-logo.svg",
+            "name": "Jest",
+            "description": "Logo de Jest"
+        },
+        {
+            "id": 6,
+            "logo": "styled-components-logo.svg",
+            "name": "Styled-components",
+            "description": "Logo de Styled-components"
+        },
+        {
+            "id": 7,
+            "logo": "html-5-logo.svg",
+            "name": "HTML 5",
+            "description": "Logo de HTML5"
+        },
+        {
+            "id": 8,
+            "logo": "css3-logo.svg",
+            "name": "CSS 3",
+            "description": "Logo de CSS3"
+        },
+        {
+            "id": 9,
+            "logo": "sass-logo.svg",
+            "name": "SASS",
+            "description": "Logo de SASS"
+        }
+    ],
+    "tools" : [
+        {
+            "id": 1,
+            "logo": "git-logo.svg",
+            "name": "Git",
+            "description": "Logo de Git"
+        },
+        {
+            "id": 2,
+            "logo": "github-logo.svg",
+            "name": "GitHub",
+            "description": "Logo de GitHub"
+        },
+        {
+            "id": 3,
+            "logo": "npm-logo.svg",
+            "name": "NPM",
+            "description": "Logo de NPM"
+        },
+        {
+            "id": 4,
+            "logo": "swagger-logo.svg",
+            "name": "Swagger (REST API)",
+            "description": "Logo de Swagger"
+        },
+        {
+            "id": 5,
+            "logo": "create-react-app.svg",
+            "name": "Create React App",
+            "description": "Logo de Create React App"
+        },
+        {
+            "id": 6,
+            "logo": "vitejs.svg",
+            "name": "Vite",
+            "description": "Logo de Vite"
+        }
     ]
 }
