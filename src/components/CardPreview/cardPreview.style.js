@@ -19,7 +19,6 @@ export const CardPreviewTitle = styled.h3`
 
 export const CardPreviewText = styled.p`
   text-align: justify;
-  height: 25%;
   @media (max-width: 768px) {
     height: auto;
   }
@@ -29,6 +28,7 @@ export const LinkWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 16px;
+  padding-top: 16px;
 `;
 
 export const Icon = styled.i`

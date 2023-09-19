@@ -65,18 +65,7 @@ const Projects = () => {
                     );
                   })}
                 </ListContainer>
-                {id === 6 ? (
-                  <CardPreview
-                    screen={`${path}${screen}`}
-                    title={title}
-                    textTitle={textTitle}
-                    text={description}
-                    github={gitHub}
-                    site={website}
-                    $height="46%"
-                    deployed={true}
-                  />
-                ) : deployed ? (
+                {deployed ? (
                   <CardPreview
                     screen={`${path}${screen}`}
                     title={title}
