@@ -5,7 +5,7 @@
             "screen": "cooked-by-me.jpg",
             "title": "Planner de repas",
             "textTitle": "Cooked by me",
-            "description": " est un catalague de recettes en ligne. Il est possible de chercher des recettes spécifiques grâce à une barre de recherche. Cette application permet également de composer son propre planner en ajoutant les plats souhaités au moment voulu (déjeuner / dîner) afin de composer les repas de la semaine. Ce projet m'a permis de découvrir TypeScript et de travailler de la logique algorithmique pure.",
+            "description": " est une application qui permet de composer son planificateur de repas hebdomadaire. Cette application possède aussi un catalague de recettes en ligne avec lequel il est possible de chercher des recettes spécifiques grâce à une barre de recherche. Ce projet m'a permis de découvrir TypeScript.",
             "gitHub": "https://github.com/ChloeGerry/Cooked-By-Me.git",
             "website": "https://chloegerry.github.io/Cooked-By-Me/",
             "technologies": [
@@ -29,7 +29,7 @@
             "screen": "kasa.jpg",
             "title": "Application de location immobilière",
             "textTitle": "Kasa",
-            "description": " est une application immobilière entièrement donc le besoin était de faire une refonte totale du site en React et qui soit responsive. J'ai utilisé react router afin de naviguer entre les différentes pages de l'application. Ce projet m'a permis de découvrir React, le travail par composants et la création de routes.",
+            "description": " est une application immobilière dont le besoin était de faire une refonte totale de leur site en React et qui soit responsive. J'ai utilisé react router afin de naviguer entre les différentes pages de l'application. Ce projet m'a permis de découvrir React, le travail par composants et la création de routes.",
             "gitHub": "https://github.com/ChloeGerry/Kasa-P8.git",
             "website": "https://chloegerry.github.io/Kasa-P8/",
             "technologies": [
@@ -90,14 +90,14 @@
                     "alt": "Logo de React"
                 }
             ],
-            "deployed": false
+            "deployed": true
         },
         {
             "id": 5,
             "screen": "portfolio.jpg",
             "title": "Portfolio d'une photographe",
             "textTitle": "Nina Carducci",
-            "description": " est une photographe dont l'envie était de création son portfolio en ligne. J'ai utilisé JavaScript pour récupérer dynamiquement les données, ainsi que pour ajouter ou supprimer des travaux. Ce projet m'a fait travailler l'utilisation du CRUD et des appels à l'api.",
+            "description": " est une photographe dont l'envie était de créer son portfolio en ligne. J'ai utilisé JavaScript pour récupérer dynamiquement les données, ainsi que pour ajouter ou supprimer des travaux. Ce projet m'a fait travailler l'utilisation du CRUD et des appels à l'api.",
             "gitHub": "https://github.com/ChloeGerry/Portfolio-P6.git",
             "website": "",
             "technologies": [
