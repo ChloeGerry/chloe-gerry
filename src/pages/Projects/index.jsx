@@ -105,7 +105,9 @@ const Projects = () => {
       </PaginationWrapper>
       <IconesCredits>
         * Certaines icônes proviennent du site{' '}
-        <a href="https://icones8.fr/">Icones8</a>
+        <a href="https://icones8.fr/" target="_blank">
+          Icones8
+        </a>
       </IconesCredits>
     </ProjectsSection>
   );

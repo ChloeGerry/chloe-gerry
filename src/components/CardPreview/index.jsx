@@ -35,11 +35,11 @@ const CardPreview = ({
       </CardPreviewText>
       <LinkWrapper>
         {deployed && (
-          <a href={site}>
+          <a href={site} target="_blank">
             <Icon className="fa-solid fa-globe" theme={theme}></Icon>
           </a>
         )}
-        <a href={github}>
+        <a href={github} target="_blank">
           <img src="assets/github-logo.svg" alt="Lien du Repository GitHub" />
         </a>
       </LinkWrapper>

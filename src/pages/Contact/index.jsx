@@ -10,13 +10,13 @@ const Contact = () => {
     <ContactWrapper id="contact" theme={theme}>
       <h2>Me contacter</h2>
       <LinksWrapper>
-        <a href="https://linkedin.com/in/chloé-gerry-ab98a5264">
+        <a href="https://linkedin.com/in/chloé-gerry-ab98a5264" target="_blank">
           <img
             src="assets/linkedIn-logo.svg"
             alt="Lien du LinkedIn de Chloé Gerry"
           />
         </a>
-        <a href="https://github.com/ChloeGerry">
+        <a href="https://github.com/ChloeGerry" target="_blank">
           <GitHubLogo
             src="assets/github-logo.svg"
             alt="Lien du GitHub de Chloé Gerry"
