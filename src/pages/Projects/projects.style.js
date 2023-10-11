@@ -40,8 +40,9 @@ export const CardWrapper = styled.article`
   display: flex;
   flex-direction: column;
   padding: 24px;
-  border: 1px solid #000;
+  border: 1px solid #578e8e;
   border-radius: 15px;
+  box-shadow: 0 2px 8px 0 #b0cfcf;
   width: 40%;
   height: auto;
   align-items: center;
