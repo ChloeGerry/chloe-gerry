@@ -26,6 +26,26 @@
         },
         {
             "id": 2,
+            "screen": "daily-to-do-list.jpg",
+            "title": "To do list quotidienne",
+            "textTitle": "Daily to do list",
+            "description": " est une application qui permet de lister ses tâches quotidiennes.",
+            "gitHub": "https://github.com/ChloeGerry/daily-to-do-list.git",
+            "website": "https://chloegerry.github.io/daily-to-do-list/",
+            "technologies": [
+                {
+                    "logo": "vue-logo.svg",
+                    "alt": "Logo de Vue"
+                },
+                {
+                    "logo": "css3-logo.svg",
+                    "alt": "Logo de CSS3"
+                }
+            ],
+            "deployed": true
+        },
+        {
+            "id": 3,
             "screen": "kasa.jpg",
             "title": "Application de location immobilière",
             "textTitle": "Kasa",
@@ -45,7 +65,7 @@
             "deployed": true
         },
         {
-            "id": 3,
+            "id": 4,
             "screen": "redux.jpg",
             "title": "Application bancaire",
             "textTitle": "Argent Bank",
@@ -73,7 +93,7 @@
             "deployed": false
         },
         {
-            "id": 4,
+            "id": 5,
             "screen": "debug.jpg",
             "title": "Débug d'un site d'événementiel",
             "textTitle": "77 Events",
@@ -93,7 +113,7 @@
             "deployed": true
         },
         {
-            "id": 5,
+            "id": 6,
             "screen": "portfolio.jpg",
             "title": "Portfolio d'une photographe",
             "textTitle": "Nina Carducci",
@@ -117,7 +137,7 @@
             "deployed": false
         },
         {
-            "id": 6,
+            "id": 7,
             "screen": "christmas-algorithm.jpg",
             "title": "Algorithme de distribution de cadeau",
             "textTitle": "Algorithme",
